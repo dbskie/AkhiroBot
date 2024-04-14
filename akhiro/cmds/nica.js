@@ -4,6 +4,7 @@ module.exports.config = {
   name: "nica",
   author: "Rui | LiANE @nealianacagara",
   role: 0,
+  description: "Nica API",
   usage: "nica [prompt]",
 };
 
