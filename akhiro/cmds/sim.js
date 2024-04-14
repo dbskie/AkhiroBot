@@ -13,7 +13,7 @@ module.exports = {
 
     if (!message) {
       api.sendMessage(
-        "Invalid command usage. Correct format: `:sim [message]`",
+        "Invalid command usage. Correct format: `/sim [message]`",
         event.threadID,
         event.messageID,
       );
@@ -22,7 +22,7 @@ module.exports = {
 
     try {
       const response = await axios.get(
-        `https://simsimi.fun/api/v2/?mode=talk&lang=en&message=${message}&filter=true`,
+        `https://simsimi.fun/api/v2/?mode=talk&lang=ph&message=${message}&filter=false`,
       );
       const simResponse = response.data.success
         ? response.data.success
